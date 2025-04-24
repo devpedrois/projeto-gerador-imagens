@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador IA | Criar Imagem</title>
+    <link rel="stylesheet" href="estilos/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">Gerador<span>IA</span></a>
+        <nav>
+          <ul class="nav-lista">
+            <li><a href="index.html" class="nav-link">Início</a></li>
+            <li><a href="gerar.html" class="nav-link ativo">Gerar</a></li>
+            <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+            <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="titulo-secao">Criar Nova Imagem</h1>
+      <form action="#" method="post" class="formulario">
+        <div class="grupo-form">
+          <label for="descricao" class="rotulo">Descrição detalhada</label>
+          <textarea
+            id="descricao"
+            class="controle-form"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+        <div class="grupo-form">
+          <label for="estilo" class="rotulo">Estilo</label>
+          <select id="estilo" class="controle-form">
+            <option value="realista">Realista</option>
+            <option value="pintura">Pintura Artística</option>
+            <option value="desenho">Desenho Animado</option>
+            <option value="desenho">Quadrinho/manga</option>
+            <option value="desenho">Pixel arte</option>
+          </select>
+        </div>
+        <div class="grupo-form">
+          <label class="rotulo">Opções</label>
+          <div>
+            <input type="checkbox" id="hd" name="hd" />
+            <label for="hd">Alta qualidade</label>
+            <br />
+            <input type="checkbox" id="hd" name="hd" />
+            <label for="hd">Média qualidade</label>
+            <br />
+            <input type="checkbox" id="hd" name="hd" />
+            <label for="hd">Baixa qualidade</label>
+          </div>
+        </div>
+        <button type="submit" class="botao">Gerar Imagem</button>
+      </form>
+    </main>
+    <footer class="rodape">
+      <p>Projeto desenvolvido para IC</p>
+    </footer>
+  </body>
+</html>
